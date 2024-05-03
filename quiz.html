@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ระบบข้อสอบอย่างง่าย Simple Quiz</title>
+   <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+   <div><h1 class="score">Correct Answer is 0 of 2</h1></div>
+   <div class="quiz-container">
+       <h2>ข้อที่ 1</h2>
+       <p id="question1">PIM ย่อมาจากอะไร ?</p>
+       <button class="button" onclick="checkAnswer1('a')">A) พีไอเอ็ม</button>
+       <button class="button" onclick="checkAnswer1('b')">B) ปิ๋ม</button>
+       <button class="button" onclick="checkAnswer1('c')">C) พิม</button>
+       <button class="button" onclick="checkAnswer1('d')">D) ภีม</button>
+       <p id="result1"></p>      
+   </div>
+   <br>
+   <div class="quiz-container">
+        <h2>ข้อที่ 2</h2>
+        <p id="question2">มหาวิทยาลัยศิลปากร ใช้อักษรย่อว่าอะไร</p>
+        <button class="button" onclick="checkAnswer2('a')">A) มศ</button>
+        <button class="button" onclick="checkAnswer2('b')">B) ศก</button>
+        <button class="button" onclick="checkAnswer2('c')">C) มศก</button>
+        <button class="button" onclick="checkAnswer2('d')">D) มวศ</button>
+        <p id="result2"></p>
+    </div>
+   <script src="quiz.js"></script>
+</body>
+</html>
